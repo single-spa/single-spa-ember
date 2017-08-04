@@ -1,0 +1,29 @@
+{
+  "name": "single-spa-ember",
+  "version": "0.1.0",
+  "description": "Helper functions for using single-spa and ember together.",
+  "main": "lib/single-spa-ember.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CanopyTax/single-spa-ember.git"
+  },
+  "keywords": [
+    "single-spa",
+    "ember"
+  ],
+  "author": "Joel Denning",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/CanopyTax/single-spa-ember/issues"
+  },
+  "homepage": "https://github.com/CanopyTax/single-spa-ember#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
