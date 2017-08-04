@@ -96,7 +96,7 @@ In your single-spa root application (which is separate from anything generated b
 import * as singleSpa from 'single-spa';
 import {loadEmberApp} from 'single-spa-ember';
 
-singleSpa.declareChildApplication('ember-app', activityFunction, loadingFunction);
+singleSpa.declareChildApplication('ember-app', loadingFunction, activityFunction);
 
 function activityFunction(location) {
   // Only render the ember app when the url hash starts with ember
