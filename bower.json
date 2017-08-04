@@ -1,7 +1,7 @@
 {
   "name": "single-spa-ember",
   "description": "Helper functions for using single-spa and ember together.",
-  "main": "lib/single-spa-ember.js",
+  "main": "amd/single-spa-ember.js",
   "authors": [
     "Joel Denning"
   ],
