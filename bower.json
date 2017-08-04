@@ -1,0 +1,21 @@
+{
+  "name": "single-spa-ember",
+  "description": "Helper functions for using single-spa and ember together.",
+  "main": "lib/single-spa-ember.js",
+  "authors": [
+    "Joel Denning"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "single-spa",
+    "ember"
+  ],
+  "homepage": "https://github.com/CanopyTax/single-spa-ember",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
