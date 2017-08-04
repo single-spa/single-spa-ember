@@ -1,12 +1,12 @@
 {
   "name": "single-spa-ember",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Helper functions for using single-spa and ember together.",
   "main": "lib/single-spa-ember.js",
   "scripts": {
     "clean": "rm -rf lib amd",
-		"build-for-bower": "babel src --out-dir amd",
-		"build-for-npm": "babel src --out-dir lib --no-babelrc --presets=es2015 --plugins=transform-object-rest-spread",
+    "build-for-bower": "babel src --out-dir amd",
+    "build-for-npm": "babel src --out-dir lib --no-babelrc --presets=es2015 --plugins=transform-object-rest-spread",
     "build": "npm run build-for-bower && npm run build-for-npm",
     "prepublish": "npm run clean && npm run build"
   },
