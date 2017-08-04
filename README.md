@@ -4,7 +4,7 @@ Helper functions for using [single-spa](https://github.com/CanopyTax/single-spa)
 It is available on npm as `single-spa-ember`, and also available on bower as `single-spa-ember` in case you want to use it with ember cli and need to use bower.
 
 ## Overview
-When you are building a an ember application that you want to work as a [single-spa child application](https://github.com/CanopyTax/single-spa/blob/master/docs/child-applications.md), there are five things you need to implement:
+When you are building an ember application that you want to work as a [single-spa child application](https://github.com/CanopyTax/single-spa/blob/master/docs/child-applications.md), there are five things you need to implement:
 - A [loading function](https://github.com/CanopyTax/single-spa/blob/master/docs/root-application.md#loading-function)
 - An [activity function](https://github.com/CanopyTax/single-spa/blob/master/docs/root-application.md#activity-function)
 - A [bootstrap function](https://github.com/CanopyTax/single-spa/blob/master/docs/child-applications.md#bootstrap)
@@ -48,6 +48,10 @@ const emberLifecycles = singleSpaEmber({
     rootElement: '#ember-app',
   },
 });
+
+export const bootstrap = emberLifecycles.bootstrap;
+export const mount = emberLifecycles.mount;
+export const unmount = emberLifecycles.unmount;
 ```
 
 ## Usage with ember cli
@@ -139,15 +143,7 @@ const emberLifecycles = singleSpaEmber({
 })
 
 // Single-spa lifecycles.
-export function bootstrap() {
-	return emberLifecycles.bootstrap();
-}
-
-export function mount() {
-	return emberLifecycles.mount();
-}
-
-export function unmount() {
-	return emberLifecycles.unmount();
-}
+export const bootstrap = emberLifecycles.bootstrap;
+export const mount = emberLifecycles.mount;
+export const unmount = emberLifecycles.unmount;
 ```
