@@ -1,6 +1,6 @@
 {
   "name": "single-spa-ember",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Helper functions for using single-spa and ember together.",
   "main": "lib/single-spa-ember.js",
   "scripts": {
