@@ -5,8 +5,8 @@
   "main": "lib/single-spa-ember.js",
   "scripts": {
     "clean": "rm -rf lib amd",
-    "build-for-bower": "babel src --out-dir amd",
-    "build-for-npm": "babel src --out-dir lib --no-babelrc --presets=es2015 --plugins=transform-object-rest-spread",
+    "build-for-bower": "babel src --out-dir amd --source-maps",
+    "build-for-npm": "babel src --out-dir lib --no-babelrc --presets=es2015 --plugins=transform-object-rest-spread --source-maps",
     "build": "npm run build-for-bower && npm run build-for-npm",
     "prepublish": "npm run clean && npm run build"
   },

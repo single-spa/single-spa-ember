@@ -126,3 +126,4 @@ define(['exports'], function (exports) {
 		});
 	}
 });
+//# sourceMappingURL=single-spa-ember.js.map
