@@ -104,18 +104,18 @@ define(['exports'], function (exports) {
 
 			if (vendorUrl) {
 				var scriptVendor = document.createElement('script');
-				scriptVendor.src = '/build/' + appName + '/assets/vendor.js';
+				scriptVendor.src = vendorUrl;
 				scriptVendor.async = true;
-				scriptVendor.onload = loadEmberApp;
+				scriptVendor.onload = loadApp;
 				scriptVendor.onerror = reject;
 				document.head.appendChild(scriptVendor);
 			} else {
-				loadEmberApp();
+				loadApp();
 			}
 
-			function loadEmberApp() {
+			function loadApp() {
 				var scriptEl = document.createElement('script');
-				scriptEl.src = '/build/' + appName + '/assets/ember-app.js';
+				scriptEl.src = appUrl;
 				scriptEl.async = true;
 				scriptEl.onload = function () {
 					resolve(window.require(appName + '/app'));
