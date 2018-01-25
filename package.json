@@ -4,11 +4,11 @@
   "description": "Helper functions for using single-spa and ember together.",
   "main": "lib/single-spa-ember.js",
   "scripts": {
-    "clean": "rm -rf lib amd",
-    "build-for-bower": "babel src --out-dir amd --source-maps",
-    "build-for-npm": "babel src --out-dir lib --no-babelrc --presets=es2015 --plugins=transform-object-rest-spread --source-maps",
-    "build": "npm run build-for-bower && npm run build-for-npm",
-    "prepublish": "npm run clean && npm run build"
+    "clean": "rimraf lib amd",
+    "build-for-bower": "webpack --config webpack.amd-config.js",
+    "build-for-npm": "babel src --out-dir lib --source-maps",
+    "build": "yarn clean && yarn build-for-bower && yarn build-for-npm",
+    "prepublish": "yarn build"
   },
   "repository": {
     "type": "git",
@@ -26,8 +26,11 @@
   "homepage": "https://github.com/CanopyTax/single-spa-ember#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.2",
     "babel-plugin-transform-es2015-modules-amd": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-es2015": "^6.24.1"
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.10.0"
   }
 }
