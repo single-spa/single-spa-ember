@@ -1,4 +1,4 @@
-define(['exports'], function (exports) {
+define('single-spa-ember/src/single-spa-ember', ['exports'], function (exports) {
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
