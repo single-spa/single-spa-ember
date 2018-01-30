@@ -1,6 +1,6 @@
 {
-	presets: [
-		['es2015', {modules: "amd"}],
-	],
+  moduleIds: true,
+  moduleRoot: 'single-spa-ember',
+	presets: ['env'],
 	plugins: ['transform-object-rest-spread'],
 }
