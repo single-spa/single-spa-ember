@@ -40,7 +40,7 @@ Single-spa-ember will implement the [single-spa lifecyle functions](https://gith
 
 ```js
 // In the ember child application
-import singleSpaEmber from 'single-spa-ember';
+import singleSpaEmber from 'single-spa-ember/src/single-spa-ember';
 
 const emberLifecycles = singleSpaEmber({
   appName: 'ember-app', // required
