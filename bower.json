@@ -10,7 +10,7 @@
     "single-spa",
     "ember"
   ],
-  "homepage": "https://github.com/CanopyTax/single-spa-ember",
+  "homepage": "https://github.com/single-spa/single-spa-ember",
   "ignore": [
     "**/.*",
     "node_modules",

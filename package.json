@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CanopyTax/single-spa-ember.git"
+    "url": "git+https://github.com/single-spa/single-spa-ember.git"
   },
   "keywords": [
     "single-spa",
@@ -21,9 +21,9 @@
   "author": "Joel Denning",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/CanopyTax/single-spa-ember/issues"
+    "url": "https://github.com/single-spa/single-spa-ember/issues"
   },
-  "homepage": "https://github.com/CanopyTax/single-spa-ember#readme",
+  "homepage": "https://github.com/single-spa/single-spa-ember#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-es2015-modules-amd": "^6.24.1",
